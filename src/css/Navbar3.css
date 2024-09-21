@@ -1,0 +1,128 @@
+
+.custom-navbar {
+    background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7, #baf2fe, white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1030;
+    height: 3.75rem;
+}
+
+.custom-navbar .container {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.custom-toggler {
+    border: none;
+    background: none;
+    font-size: 28px;
+    margin-right: 1rem;
+    color: white;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-icon {
+    cursor: pointer;
+}
+
+.custom-navbar .navbar-brand {
+    height: 100%; /* Asegura que el contenedor padre tenga una altura definida */
+}
+
+.custom-navbar .navbar-brand .navbar-logo-motorola {
+    height: 4rem;
+    width: auto;
+}
+
+.custom-navbar .navbar-brand .navbar-logo-bymas {
+    height: 2.75rem;
+    width: auto;
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0; 
+    .texto-link {
+        font-weight: bold;
+        color: white !important;
+        padding: 0.75rem 0;
+    }
+    .texto-link:hover {
+        color: rgb(168, 241, 255) !important;
+    }
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3c43;
+    background-color: gray;
+    background: linear-gradient(to left,#0A5AA3, #0082F5, #00CBF7);
+    /*background: linear-gradient(to left, rgba(10, 90, 163, 0.95), rgba(0, 130, 245, 0.95), rgba(0, 203, 247, 0.95)); /* Fondo con gradiente y transparencia */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .custom-navbar {
+        background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7);
+    }
+
+    .custom-navbar .navbar-brand .navbar-logo-motorola {
+        display: none !important;
+    }
+
+    .custom-navbar .navbar-brand .navbar-logo-bymas {
+        margin-left: 1rem;
+    }
+
+    .custom-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .navbar-collapse.show .custom-nav {
+        display: flex;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.linea-final-nav {
+    z-index: 2000;
+    position: fixed;
+    height: 4px;
+    top: 3.75rem;
+    width: 100%;
+    background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7, gray, rgb(79, 79, 79));
+}
+
+.hr-navlinks {
+    margin: 1px;
+    height: 1.5px;
+    width: 45%;
+    background-color: black;
+    border: none;
+    display: block;
+}

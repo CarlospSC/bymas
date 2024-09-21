@@ -1,0 +1,218 @@
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    transition: background 0.5s ease;
+}
+  
+.hero:hover::before {
+    background: transparent;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    /*background-image: url('../img/Guardia-radio-derecha-espacio.png');*/
+    background-image: url('../img/Guardia-radio-derecha-espacio.webp');
+    background-size: cover;
+    background-position: top;
+    background-position-x: right;
+    background-position-y: 13%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 1);
+    
+  .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    margin-left: 2em;
+    transform: translate(-25%, -25%);
+    color: white;
+    text-align: left;
+    z-index: 1;
+    height: 90%;
+    width: 25%;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 4.4rem;
+    font-size: 4vw;
+    margin-bottom: 44px;
+    width: 100%;
+    background: linear-gradient(20deg, #00CBF7, white);
+    background: linear-gradient(10deg, #0082F5, #00CBF7, #a6e4f2);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-content p {
+    color: white;
+    font-size: 1.35rem;
+    font-size: 1vw;
+    width: 40%;
+    width: 100%;
+  }
+  
+  .marcas-logos {
+    position: absolute;
+    top: 60vh;
+    left: 1em;
+    width: 35%;
+    height: 11%;
+    margin-top: 4em;
+    /* Para el notebook */
+    margin-top: 3em;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(-120%);
+    border-radius: 10px;
+    transition: transform 1s ease;
+    background-color: rgba(255, 255, 255, 0.932);
+    background-color: transparent;
+
+    img {
+      /*
+      width: auto;
+      */
+      height: 100%;
+    }
+
+    .movistar-arena {
+      height: 77%;
+    }
+
+    .lollapalooza {
+      height: 80%;
+    }
+
+    .primavera-sound {
+      height: 70%;
+      margin-left: 0.5em;
+    }
+  }
+  
+  .marcas-logos.visible {
+    transform: translateX(0%);
+  }
+  
+  .puntos-movimiento.visible {
+    transform: translateX(-25%);
+  }
+  
+  .puntos-movimiento {
+    transform: translateX(-140%);
+    transition: transform 1s ease; 
+  }
+}
+  
+  /* --------------------------- ESTILOS DEL HERO 2 --------------------------- */
+  
+.hero2 {
+    width: 100%;
+    height: 80vh;
+    /*background-image: url('../img/Guardia-radio-izquierda1.png');*/
+    background-image: url('../img/Guardia-radio-izquierda1.webp');
+    background-size: cover;
+    background-position: top;
+    background-position-y: 10%;
+    z-index: 900;
+  
+  
+  /*
+  .hero2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    transition: background 0.5s ease;
+  }
+  
+  .hero2:hover::before {
+    background: transparent; 
+  }
+  */
+  
+  .hero-content-2 {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: right;
+    z-index: 1;
+
+    .hero2-izquierda {
+      flex: 65%;
+      display: flex;
+      position: relative;
+      img {
+        position: absolute;
+        left: 10%;
+        top: 70%;
+        height: 20%;
+        width: auto;
+      }
+    }
+
+    .hero2-derecha {
+      padding: 3em;
+      padding-right: 1.75em;
+      margin-top: 0em;
+      padding-top: 7em;
+      display: flex;
+      flex: 35%;
+      flex-direction: column;
+      justify-content: start;
+      align-items: end;
+      overflow: hidden;
+
+      h1 {
+        color: #2eaff5;
+        color: #00CBF7;
+        font-size: 4rem;
+        margin-bottom: 0.25em;
+        width: 80%;
+        text-shadow:
+          -1px -1px 0 rgb(42, 42, 42),  
+          1px -1px 0 rgb(42, 42, 42),
+          -1px  1px 0 rgb(42, 42, 42),
+          1px  1px 0 rgb(42, 42, 42);
+      }
+      p {
+        color: white;
+        font-size: 1.35rem;
+        width: 90%;
+      }
+      .bymas-logo-hero {
+        padding-top: 2.5em;
+        padding-right: 4em;
+      }
+      .marcas-logos-2 {
+        width: 100%;
+        height: 10%;
+        margin-top: 3.5em;
+        padding: 3%;
+        display: flex;
+        gap: 2rem;
+        transform: translateX(120%);
+        border-radius: 10px;
+        transition: transform 1s ease;
+        background-color: white;
+      }
+      .marcas-logos-2.visible {
+        transform: translateX(0%);
+      }
+    }
+  }
+}

@@ -1,0 +1,687 @@
+/*
+body, html, #root {
+  overflow-x: hidden;
+}
+*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #0A5AA3;
+  background-color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text {
+  color: #0A5AA3;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.rombo {
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.solo-borde {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 1% 100%, 1% 1%, 99% 1%, 99% 99%, 1% 99%, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 1% 100%, 1% 1%, 99% 1%, 99% 99%, 1% 99%, 0 100%, 100% 100%, 100% 0);
+  display: none;
+  background-color: black;
+}
+
+.relleno {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0);;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0);
+}
+
+.rombo-1 {
+  top: 105vh; 
+  right: 8vh;
+  height: 14%;
+  width: 7%;
+  background-color: black;
+}
+
+.rombo-2 {
+  z-index: 10;
+  top: 86vh;
+  right: 9vh;
+  height: 12%;
+  width: 6%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-3 {
+  top: 95vh; 
+  right: 10vh;
+  height: 12.5%;
+  width: 6.25%;
+  transform: rotate(45deg);
+  background-color: black;
+  display: block;
+}
+
+.rombo-4 {
+  top: 105vh; 
+  right: 18vh;
+  height: 18%;
+  width: 9%;
+  background-color: #3290a5;
+}
+
+.rombo-5 {
+  top: 106vh;
+  right: 19vh;
+  height: 16%;
+  width: 8%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-6 {
+  top: 119vh;
+  right: 3vh;
+  height: 10%;
+  width: 5%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-7 {
+  top: 103vh;
+  right: 5.5vh;
+  height: 9%;
+  width: 4.5%;
+  background-color: #0A5AA3;
+}
+
+.rombo-8 {
+  top: 103.5vh;
+  right: 6vh;
+  height: 8%;
+  width: 4%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-9 {
+  top: 127vh;
+  right: 13vh;
+  height: 10%;
+  width: 5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-10 {
+  top: 95vh;
+  right: 0vh;
+  height: 7%;
+  width: 3.5%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-11 {
+  top: 111.5vh;
+  right: -0.5vh;
+  height: 7%;
+  width: 3.5%;
+  background-color: black;
+}
+
+.rombo-12 {
+  top: 112vh;
+  right: 0vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-13 {
+  top: 75vh;
+  right: 0vh;
+  height: 10%;
+  width: 5%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-14 {
+  top: 126.25vh;
+  right: 12.25vh;
+  height: 11.5%;
+  width: 5.75%;
+  background-color: #0A5AA3;
+}
+
+.rombo-15 {
+  top: 73.5vh;
+  right: -1vh;
+  height: 12%;
+  width: 6%;
+  background-color: #3290a5;
+}
+
+.rombo-16 {
+  top: 170vh;
+  left: -4vh;
+  height: 12%;
+  width: 6%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-17 {
+  top: 152vh;
+  left: 0vh;
+  height: 13%;
+  width: 6.5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-18 {
+  top: 160vh;
+  left: 8vh;
+  height: 8%;
+  width: 4%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-19 {
+  top: 177vh;
+  left: 10vh;
+  height: 12%;
+  width: 6%;
+  background-color: #0A5AA3;
+  display: block;
+}
+
+.rombo-20 {
+  top: 175vh;
+  left: 15vh;
+  height: 9%;
+  width: 4.5%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+.rombo-21 {
+  top: 78vh;
+  left: 2vh;
+  height: 12%;
+  width: 6%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-22 {
+  top: 85vh;
+  left: 9vh;
+  height: 7%;
+  width: 3.5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-23 {
+  top: 86vh;
+  left: -8vh;
+  height: 10%;
+  width: 5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-24 {
+  top: 72vh;
+  left: 16vh;
+  height: 12%;
+  width: 6%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+  display: block;
+}
+
+.rombo-25 {
+  top: 82vh;
+  left: 95vh;
+  height: 8%;
+  width: 4%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+  display: none;
+}
+
+.rombo-26 {
+  top: 80.35vh;
+  left: 114vh;
+  height: 5.5%;
+  width: 2.75%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-27 {
+  top: 72vh;
+  left: 106vh;
+  height: 12%;
+  width: 6%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-28 {
+  top: 78vh;
+  left: 124vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.rombo-29 {
+  top: 272vh;
+  left: 3vh;
+  height: 13%;
+  width: 6.5%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-30 {
+  z-index: 10;
+  top: 279vh;
+  left: 11vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-31 {
+  top: 270vh;
+  left: 22vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-32 {
+  top: 269vh;
+  top: 273vh;
+  left: 104vh;
+  left: 98vh;
+  height: 14%;
+  width: 7%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-33 {
+  top: 275vh;
+  top: 282vh;
+  left: 110vh;
+  left: 108vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-34 {
+  top: 276vh;
+  top: 282vh;
+  left: 120vh;
+  height: 7%;
+  width: 3.5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-35 {
+  top: 272vh;
+  left: 194vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-36 {
+  top: 273vh;
+  left: 196vh;
+  height: 11%;
+  width: 5.5%;
+  background-color: black;
+  display: block;
+}
+
+.rombo-37 {
+  top: 289vh;
+  left: 201vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-38 {
+  top: 300vh;
+  top: 305vh;
+  left: -4.25vh;
+  height: 8%;
+  width: 4%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-39 {
+  top: 312vh;
+  top: 317vh;
+  left: 0vh;
+  height: 10%;
+  width: 5%;
+  background: black;
+  display: block;
+}
+
+.rombo-40 {
+  top: 318vh;
+  top: 323vh;
+  left: -2vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-41 {
+  top: 348vh;
+  top: 353vh;
+  left: -2vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-42 {
+  top: 353vh;
+  top: 358vh;
+  left: 4vh;
+  height: 8%;
+  width: 4%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-43 {
+  top: 358vh;
+  top: 363vh;
+  left: 3vh;
+  height: 12%;
+  width: 6%;
+  background: black;
+  display: block;
+}
+
+.rombo-44 {
+  top: 361vh;
+  top: 366vh;
+  left: 16vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-45 {
+  top: 362vh;
+  top: 370vh;
+  left: 63vh;
+  height: 9%;
+  width: 4.5%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-46 {
+  z-index: 10;
+  top: 357vh;
+  top: 369vh;
+  left: 143vh;
+  height: 7%;
+  width: 3.5%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+  display: none;
+}
+
+.rombo-47 {
+  top: 357vh;
+  top: 370vh;
+  left: 144vh;
+  height: 13%;
+  width: 6.5%;
+  display: block;
+}
+
+.rombo-48 {
+  top: 363vh;
+  top: 374vh;
+  left: 163vh;
+  height: 7%;
+  width: 3.5%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-49 {
+  top: 337vh;
+  right: -6vh;
+  height: 10%;
+  width: 5%;
+  background: black;
+  display: block;
+}
+
+.rombo-50 {
+  top: 342vh;
+  right: -1vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.rombo-51 {
+  top: 345vh;
+  right: 8vh;
+  height: 6%;
+  width: 3%;
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.rombo-52 {
+  top: 266vh;
+  top: 272vh;
+  left: 131vh;
+  height: 14%;
+  width: 7%;
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+  
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------ROMBOS SECCIÓN WHY------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.enano {
+  height: 4%;
+  width: 2%;
+}
+
+.muy-pequeño {
+  height: 5%;
+  width: 2.5%;
+}
+
+.pequeño {
+  height: 6%;
+  width: 3%;
+}
+
+.mediano {
+  height: 8%;
+  width: 4%;
+}
+
+.grande {
+  height: 10%;
+  width: 5%;
+}
+
+.muy-grande {
+  height: 12%;
+  width: 6%;
+}
+
+.gigante {
+  height: 14%;
+  width: 7%;
+}
+
+.celeste-brillante {
+  background: linear-gradient(to right bottom,#0A5AA3, #0082F5, #00CBF7, #0082F5, #0A5AA3);
+}
+
+.celeste-clarito {
+  background: linear-gradient(to right bottom,#7fe7ff, #abeefd, #e5faff, #abeefd, #7fe7ff);
+}
+
+.gris {
+  background: linear-gradient(to right bottom, gray, darkgray, rgb(200, 200, 200), darkgray, gray);
+}
+
+.rombo-53 {
+  top: 206vh;
+  left: 0.5vh;
+}
+
+.rombo-54 {
+  top: 207.5vh;
+  left: -5vh;
+  display: block;
+}
+
+.rombo-55 {
+  top: 218vh;
+  left: 5.5vh;
+}
+
+.rombo-56 {
+  top: 248vh;
+  left: -3vh;
+}
+
+.rombo-57 {
+  top: 250vh;
+  left: -2vh;
+  display: block;
+  background-color: #0A5AA3;
+}
+
+.rombo-58 {
+  top: 180vh;
+  right: -4.25vh;
+}
+
+.rombo-59 {
+  top: 187vh;
+  right: 5vh;
+}
+
+.rombo-60 {
+  top: 207vh;
+  right: -0.5vh;
+}
+
+.rombo-61 {
+  top: 244vh;
+  right: 0vh;
+  display: block;
+}
+
+.rombo-62 {
+  top: 242vh;
+  right: -1.5vh;
+}
+
+/* ROMBOS EXTRA DE SECCIÓN SERVICIO TÉCNICO */
+
+.rombo-63 {
+  top: 380vh;
+  left: 54vh;
+  height: 11%;
+  width: 5.5%;
+  display: block;
+}
+
+.rombo-64 {
+  top: 376vh;
+  left: 73vh;
+  height: 12%;
+  width: 6%;
+}
+
+.rombo-65 {
+  top: 380vh;
+  left: 158.75vh;
+}
+
+.rombo-66 {
+  top: 378vh;
+  right: -1vh;
+  display: block;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*
+.rombos-clientes {
+  position: relative;
+  background-color: yellow;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.rombo-cliente {
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.solo-borde {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 1% 100%, 1% 1%, 99% 1%, 99% 99%, 1% 99%, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 1% 100%, 1% 1%, 99% 1%, 99% 99%, 1% 99%, 0 100%, 100% 100%, 100% 0);
+  display: none;
+}
+
+.relleno {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0);;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0);
+}
+
+.rombo-cliente-1 {
+  top: 5vh; 
+  right: 8vh;
+  height: 14%;
+  width: 7%;
+  background-color: black;
+}
+*/
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+

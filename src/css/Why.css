@@ -1,0 +1,262 @@
+
+.why {
+  position: relative;
+  z-index: 900;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 55%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Asegura que los pseudo-elementos no desborden el contenedor */
+}
+
+.why::before,
+.why::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 55%;
+  transition: opacity 1.5s ease-in-out; /* Ajusta la duración y el tipo de transición */
+  opacity: 0;
+  z-index: -1; /* Asegura que los pseudo-elementos estén detrás del contenido */
+}
+
+.why::before {
+  /*background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.jpg');*/
+  background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.webp');
+  animation: fade1 12s infinite;
+}
+
+.why::after {
+  /*background-image: url('../img/trato-4.png');*/
+  background-image: url('../img/trato-4.webp');
+  animation: fade2 12s infinite;
+}
+
+@keyframes fade1 {
+  0%, 10%, 90%, 100% {
+      opacity: 1;
+  }
+  65% {
+      opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0%, 10%, 90%, 100% {
+      opacity: 0;
+  }
+  65% {
+      opacity: 1;
+  }
+}
+
+.why {
+  /*
+  background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: 100%;
+  background-position-y: 55%;
+  */
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 98%;
+  height: 82vh;
+  height: auto;
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+  }
+
+  .why-contenedor {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
+
+.why-text {
+  margin: 0em;
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  background-color: #f1f1f1;
+  background: linear-gradient(to left,transparent, white, white);
+
+  .why-content {
+    padding: 1em 1em;
+    padding-right: 27em;
+    height: 100%;
+
+    h3 {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #0A5AA3;
+      color: #0a4754;
+    }
+
+    p {
+      color: black;
+    }
+
+    .why-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 7em;
+      margin-bottom: 3em;
+      background: linear-gradient(to right, #12829b, #343434);
+
+      h1 {
+        margin:  0;
+        color: white;
+      }
+    }
+
+    .why-info {
+      margin: 5.5vw 0;
+      padding: 0 4em;
+    }
+
+    .why-textos-informacion {
+
+      .contenedor-boton-mas-informacion {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin: 1em;
+        margin-bottom: 1.5em;
+      }
+
+      .boton-mas-informacion {
+        width: 38%;
+        color:#fff;
+        margin-left: 1em;
+        padding: 1em;
+        background-color: #0A5AA3;
+        background: linear-gradient(to right,  #12829b, #343434);
+        border-radius: 5px;
+      }
+
+      .boton-mas-informacion:hover {
+        background: linear-gradient(to left,  #12829b, #343434);
+        cursor: pointer;
+      }
+    }
+
+    .carousel {
+      
+      max-height: 100%;
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: 75%;
+        transform: translateY(-50%);
+        width: 10%;
+        display: none;
+      }
+
+      .carousel-item {
+        ul {
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .carousel-indicators li{
+        background-color: #000;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+
+      .li-imagenes{
+        margin: 3.8em 0 2em 0;
+      }
+
+      .carousel-indicators {
+        margin-top: 0.75em;
+        top: 100%;
+      }
+    }
+  }
+
+  .why-footer {
+    /*
+    display: none;
+    */
+    width: 100%;
+    padding: 1em;
+    /*
+    background-color: #12829b80;
+    */
+    background: linear-gradient(to left,  #12829b, #343434);
+    h3 {
+      color: white;
+      font-size: 1.25em;
+    }
+    p {
+      color: white;
+      font-size: 1em;
+    }
+  }
+}
+
+/*
+.slideshow {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: 100%;
+  background-position-y: 55%;
+  animation: fade 16s infinite;
+}
+
+@keyframes fade {
+  0%, 33.33% {
+    background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.jpg');
+  }
+  33.34%, 66.66% {
+    background-image: url('../img/trato-4.png');
+  }
+  66.67%, 100% {
+    background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.jpg');
+  }
+}
+*/
+
+/*
+.why-carrusel .carousel-item {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.why-carrusel .carousel-item.active {
+  opacity: 1;
+}
+*/

@@ -1,0 +1,275 @@
+.boton-modelo {
+    color:#fff;
+    padding: 0.1em 0.6em;
+    background-color: #00A0DD;
+    /*
+    background: linear-gradient(to left,  #29d8ff, #019edd);
+    background: linear-gradient(to left,  #007089, #003348);
+    */
+    background-color: #008ec6;
+    border-radius: 5px;
+    border: 1px solid #00CBF7;
+    border: none;
+    font-size: 18px;
+}
+
+.boton-modelo:hover {
+    background: linear-gradient(to right,  #007089, #003348);
+    cursor: pointer;
+}
+
+.boton-detalles {
+    color:#fff;
+    padding: 0.6em 1.2em;
+    background-color: #008ec6;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton-detalles:hover {
+    background: linear-gradient(to right,  #007089, #003348);
+    cursor: pointer;
+}
+
+.contenedor-ficha-tecnica {
+    .seleccionador-modelo {
+        font-family: "Radio Canada Big", sans-serif;
+        padding: 0.6em 0;
+        background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7);
+        color: white;
+        padding-left: 1em;
+        font-size: 20px;
+        span {
+            margin-left: 2em;
+            margin-right: 1em;
+        }
+        .boton-modelo {
+            margin-right: 1em;
+        }
+        
+    }
+}
+
+.ficha-tecnica {
+    display: flex;
+    padding: 4em;
+    margin: 0 10em;
+    padding-bottom: 2em;
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h1 {
+        color: #0A5AA3;
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: black;
+    }
+
+    .linea-separacion {
+        background-color: #0A5AA3;
+        height: 3px;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .c-izquierda {
+        flex: 1.5;
+    }
+
+    .c-derecha {
+        flex: 3;
+
+        .titulos {
+            
+            h1, h2 {
+                text-align: start;
+            }
+            
+        }
+
+        .contenedor-textos {
+            display: flex;
+            gap: 6em;
+    
+            color: rgb(70, 70, 70);
+    
+            h3 {
+                color: #00A0DD;
+                margin-bottom: 1.5em;
+            }
+    
+            .texto-izquierda {
+                flex: 1;
+            }
+    
+            .texto-derecha {
+                flex: 1;
+                p {
+                    margin: 4.5px 0; /* Ajusta el margen superior e inferior a 5 píxeles */
+                }
+                span {
+                    font-style: italic;
+                }
+                .accesorios {
+                    margin-top: 1.5em;
+                }
+                
+            }
+            
+        }
+        .caja-boton-detalles {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            margin-top: 1em;
+        }
+    }  
+}
+
+.texto-en-celeste {
+    display: flex;
+    background-color: #00A0DD;
+    
+    .caja-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+    }
+
+    .caja-texto {
+        /* 
+            float: right;
+            text-align: start;
+            width: 100%;
+            
+            padding: 2em;
+            padding-left: 37em;
+            padding-right: 10em;
+        */
+        
+        font-family: "Arimo", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding: 1.5em 0;
+        padding-right: 12em;
+        color: white;
+        flex: 3.1;
+        font-size: 18px;
+    }
+}
+
+.component {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.component.active {
+    display: block;
+    opacity: 1;
+}
+
+.texto-introduccion {
+    margin-bottom: 3em;
+}
+
+.texto-en-gris {
+    background-color: gray;
+    color: white;    
+    font-size: 26px;
+    padding-top: 0.4em;
+
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    .caja-texto-dep {
+        padding: 0.3em;
+        margin-left: 8em;
+        width: 45%;
+    }
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.next {
+    transform: translateX(0%);
+}
+
+.prev {
+    transform: translateX(-100%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.arrow-button {
+    z-index: 800;
+    position: fixed;
+    top: 55vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.arrow-left {
+    left: 0.25em;
+}
+
+.arrow-right {
+    right: 8em;
+}
+
+.arrow-button:hover {
+    color: #00A0DD;
+}
+
+.arrow-button .icon {
+    width: 50px;
+    height: 50px;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.arrow-button:hover .icon {
+    color: blue;
+}
+
+.info-foto {
+    width: 100%;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.active-button {
+    background: linear-gradient(to right,  #007089, #003348);
+    cursor: pointer;
+}

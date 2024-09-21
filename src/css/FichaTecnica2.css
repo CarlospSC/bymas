@@ -1,0 +1,32 @@
+
+
+.contenedor-ficha-tecnica {
+    .seleccionador-modelo2 {
+        display: flex;
+        flex-direction: column;
+        font-family: "Radio Canada Big", sans-serif;
+        padding: 0.6em 0;
+        background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7);
+        color: white;
+        padding-left: 1em;
+        font-size: 3.5vw;
+        .boton-modelo {
+            margin-right: 1em;
+        }
+        .columna-seleccionador {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2vw;
+            padding-right: 1rem;
+        }
+        .columna-botones {
+            padding: 0;
+            display: flex;
+            gap: 0.5rem;
+            button {
+                font-size: 3vw;
+            }
+        }
+    }
+}

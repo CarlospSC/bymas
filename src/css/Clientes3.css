@@ -1,0 +1,124 @@
+.clientes3-completo {
+    margin-top: 2em;
+    overflow: hidden;
+    /*
+    background: linear-gradient(to bottom,#86c0cd,white, transparent);
+    background: linear-gradient(to top left, #f8f8f8, #e1e0e0, #888888);
+    */
+    background-color: white;
+    width: 100%;
+  
+    .linea-inicio-clientes3 {
+      height: 6px;
+      background: linear-gradient(10deg,#0A5AA3, #0082F5, #00CBF7, gray, rgb(79, 79, 79));
+    }
+  }
+  
+  .animate__fadeInLeftBig {
+    animation: fadeInLeftBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  }
+  
+  .animate__fadeOutRightBig {
+    animation: fadeOutRightBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  }
+  
+  .desaparece, .adio {
+    display: none;
+  }
+  
+  .not__Hovered {
+    display: none;
+  }
+  
+  .clients3 {
+    display: flex;
+    /* gap: 3em; */
+    height: 74vh;
+    height: 80vh;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0; 
+
+  
+    .linea-puntitos-horizontal {
+      display: flex;
+    }
+  
+    .linea-puntitos-vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clients3-contenedor {
+      background-color: transparent;
+      height: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-line {
+      width: 75%;
+      text-align: start;
+    }
+  
+    .clients3-line {
+      /*
+      display: flex;
+      justify-content: center;
+      */
+      img {
+        padding: 0 1em;
+      }
+    }
+  
+    .animate__fadeInRight {
+      animation: fadeInRight;
+      animation-duration: 1s;
+    }
+  
+    .animate__fadeInLeft {
+      animation: fadeInLeft;
+      animation-duration: 1s;
+    }
+  
+    .not__Hovered {
+      display: none;
+    }
+  
+    h1 {
+      color: #0A5AA3;
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    .first-line, .second-line {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .first-line {
+      margin-top: 1em;
+    }
+
+    .second-line {
+      margin-top: 1em;
+    }
+
+    .third-line {
+      margin-top: 1em;
+    }
+
+    .fourth-line {
+      margin-top: 1em;
+    }
+  }

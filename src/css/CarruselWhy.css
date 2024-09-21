@@ -1,0 +1,19 @@
+.custom-carousel {
+    max-height: 600px; /* Altura máxima del carrusel */
+    overflow: hidden; /* Oculta cualquier desbordamiento que pueda ocurrir si las imágenes son más grandes */
+}
+
+.custom-carousel .custom-image {
+    height: 100%; /* Ajusta la altura de las imágenes al 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen se ajuste completamente al contenedor sin deformarse */
+}
+
+.custom-carousel .carousel-item {
+    opacity: 0;
+    /*transition: opacity 1s ease-in-out;  Ajusta la duración de la transición aquí */
+}
+  
+.custom-carousel .carousel-item.active {
+    opacity: 1;
+}
+

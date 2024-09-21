@@ -1,0 +1,21 @@
+/* PdfViewer.css */
+.why3-contenedor-imagenes {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .pdf-document {
+    width: 100%;
+  }
+  
+  .pdf-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }

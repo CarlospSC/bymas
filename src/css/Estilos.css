@@ -1,0 +1,135 @@
+/* ----------------------------- ESTILOS GENERALES DE LA APP ---------------------------- */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.9) !important;
+}
+
+@media only screen and (max-width: 850px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px !important; 
+  background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.App {
+  overflow:hidden;
+  text-align: center;
+
+  .contenedor-fondo {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    z-index: 800;
+    background-color: transparent;
+  }
+
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h1 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+
+
+
+/* ----------------------------- ESTILOS DE LINEAS ---------------------------- */
+
+.linea-inicio {
+  height: 8px;
+  background: linear-gradient(10deg,#0A5AA3, #0082F5, #00CBF7, gray, rgb(79, 79, 79));
+}
+
+.linea-inicio2 {
+  z-index: 2000;
+  position: fixed;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to left,#0A5AA3, #0082F5, #00CBF7, gray, rgb(79, 79, 79));
+}
+
+
+/* ------------------------------- ESTILOS DE PUNTEROS ---------------------------- */
+
+
+.puntero {
+  height: 135px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.puntero-ventas {
+  height: 67.5px;
+  background-color: transparent;
+}
+/*
+#servicio-tecnico {
+  height: 7.5px;
+}
+
+#clientes {
+  height: 47px;
+}
+*/
+/* ----------------------------------- ESTILOS DEL LOGO WHATSAPP ------------------------------- */
+
+
+#whatsapp {
+  z-index: 1700;
+  position: fixed;
+  bottom: 1rem;
+  right: -2rem;
+}
+svg {
+  width: 8rem;
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+circle {
+  fill: #25d366;
+}
+path {
+  fill:  #fff;
+}
+#whatsapp a {padding: 20px 0;}

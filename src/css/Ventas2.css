@@ -1,0 +1,261 @@
+.ventas2 {
+    z-index: 5;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    .ventas2-contenedor {
+        background-color: transparent;
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .ventas2-izquierda {
+            width: 100%;
+
+            .ventas2-header {
+                display: flex;
+                align-items: center;
+                background: transparent;
+                padding: 0.5em;
+                h1 {
+                    font-size: 3.5em;
+                    margin-left: 0.5em;
+                    color: #0A5AA3;
+                }
+                .puntos {
+                    display: flex;
+                    justify-content: end;
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .ventas2-derecha {
+            margin-top: 3rem;
+            padding: 3rem 1rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+
+            .imagen-ondas {
+                margin: 2em 0;
+                width: 28%;
+                max-width: 400px;
+                height: auto;
+            }
+
+            .radio-grande-img {
+                width: 17%;
+                max-width: 500px;
+                height: auto;
+            }
+
+            .ondas-movimiento {
+                animation: rubberBand 3s;
+            }
+        }
+    }
+
+    .caja-ventas2 {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .texto-ventas2 {
+            width: 90%;
+            margin-top: 4rem;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            
+            .linea-circulo-p {
+                display: flex;
+                align-content: center;
+                margin-bottom: 0em;
+
+            }
+
+            .circulo {
+                margin-top: 0.3rem;
+                margin-right: 1rem;
+                width: 24px;
+                height: 24px;
+                background-color: #0A5AA3;
+                border-radius: 50%;
+            }
+
+            .transparente {
+                background-color: transparent;
+            }
+
+            p {
+                color: rgb(100, 100, 100);
+                text-align: start;
+                font-size: 1.6em;
+                font-weight: bold;
+            }
+
+            
+        
+            h3 {
+                width: 100%;
+                font-size: 1.8em;
+                color: white;
+                padding: 0.5em;
+                margin-top: 0.75em;
+                background-color: #0A5AA3;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.puntos-movimiento2 {
+    position: absolute;
+    /*
+    transform: translateX(-125%);
+    transition: transform 1s ease;
+    */
+    display: flex;
+    
+    img {
+        margin-right: 0.25em;
+    }
+}
+
+.linea-puntos-ventas-grises2 {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+
+    img {
+        margin-right: 1.1em;
+        width: 19%;
+        height: auto;
+    }
+}
+
+/*
+.linea-puntos-ventas-grises3.visible {
+    transform: translateX(-243%);
+}
+*/
+
+
+
+/*
+.puntos-movimiento3.visible {
+    transform: translateX(-70%);
+}
+*/
+
+/* Media Queries */
+
+/*
+@media (max-width: 1024px) {
+    .ventas3-contenedor {
+        flex-direction: column;
+
+        .ventas3-izquierda, .ventas3-derecha {
+            width: 100%;
+        }
+
+        .ventas3-izquierda {
+            .ventas3-header {
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+*/
+
+/*
+
+@media (max-width: 768px) {
+    .ventas3 {
+        height: auto;
+        padding: 1em 0;
+    }
+
+    .ventas3-contenedor {
+        padding: 1em;
+
+        .linea-puntos-ventas-celestes {
+            .puntos-movimiento3 {
+                .puntos-img {
+                    height: 34px;
+                }
+            }
+        }
+
+        .ventas3-izquierda {
+            .ventas-header {
+                h1 {
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .ventas3-derecha {
+            .imagen-ondas {
+                margin-top: 1em;
+            }
+
+            .radio-grande-img {
+                max-width: 400px;
+            }
+        }
+    }
+
+    .caja-ventas3 .texto-ventas3 p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .ventas3-contenedor {
+        padding: 0.5em;
+
+        .ventas3-izquierda {
+            .ventas3-header {
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .ventas3-derecha {
+            .imagen-ondas {
+                margin-top: 0.5em;
+            }
+
+            .radio-grande-img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .caja-ventas3 .texto-ventas3 p {
+        font-size: 1em;
+    }
+}
+*/

@@ -1,0 +1,137 @@
+.servicio-tecnico2 {
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+
+    .servicio-tecnico2-contenedor {
+      margin: 2rem 0;
+      background-color: transparent;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .servicio-tecnico2-header {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0em;
+      background-color: transparent;
+      padding: 2rem;
+      height: 4rem;
+  
+      h1 {
+        margin-top: 1em;
+        font-size: 3.25em;
+        color: #0A5AA3;
+      }
+  
+      .puntos {
+        display:flex;
+        justify-content: end;
+        img {
+          width: 50%;
+        }
+      }
+    }
+    
+    .servicio-tecnico2-content {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+  
+      .carousel { 
+        width: 100%;
+  
+        .carousel-item {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        .tarjeta {
+          text-align: center;
+          width: 60%;
+          height: auto;
+          z-index: -1;
+  
+          img {
+            max-width: 80%;
+            height: auto;
+          }
+  
+          h3 {
+            color: white;
+            font-size: 3vw;
+            padding: 0.7em 1.3em;
+            margin: 0;
+            background: linear-gradient(to left, #0082F5, #00CBF7);
+          } 
+        }
+      }  
+    
+      .carousel-control-next {
+        right: 1.5rem; /* Ajusta esto según tus necesidades */
+        top: 50%; /* Ajusta esto según tus necesidades */
+        transform: translateY(-50%);
+      }
+  
+      .carousel-control-prev {
+        left: 1.5rem; /* Ajusta esto según tus necesidades */
+        top: 50%; /* Ajusta esto según tus necesidades */
+        transform: translateY(-50%);
+      }
+  
+      .carousel-indicators {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+      }
+    
+      .parrafo2 {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0 2rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+  
+         .linea-servicio-tec {
+          margin-top: 1.5rem;
+          margin-left: 1.5rem;
+          margin-bottom: 1em;
+          /*
+          animation: fadeInRight;
+          animation-duration: 3s;
+          */
+         }
+  
+         .animate__fadeInRight {
+          animation: fadeInRight;
+          animation-duration: 1s;
+         }
+  
+         
+  
+         .not__Hovered {
+          display: none;
+         }
+  
+  
+         p {
+          color: rgb(25, 25, 25);
+          padding: 0;
+          margin-top: 2rem;
+          font-size: 2.75vw;
+          span {
+            color: #0082F5;
+          }
+        }
+      }
+  }

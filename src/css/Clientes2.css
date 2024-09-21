@@ -1,0 +1,121 @@
+.clientes2-completo {
+    overflow: hidden;
+    padding: 2em 0;
+    padding-top: 0;
+    /*
+    background: linear-gradient(to bottom,#86c0cd,white, transparent);
+    background: linear-gradient(to top left, #f8f8f8, #e1e0e0, #888888);
+    */
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  
+    .linea-inicio-clientes2 {
+      height: 6px;
+      background: linear-gradient(10deg,#0A5AA3, #0082F5, #00CBF7, gray, rgb(79, 79, 79));
+    }
+  }
+  
+  .animate__fadeInLeftBig {
+    animation: fadeInLeftBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  }
+  
+  .animate__fadeOutRightBig {
+    animation: fadeOutRightBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  }
+  
+  .desaparece, .adio {
+    display: none;
+  }
+  
+  .not__Hovered {
+    display: none;
+  }
+  
+  .clients2 {
+    display: flex;
+    /* gap: 3em; */
+    height: 74vh;
+    height: 80vh;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4em;
+  
+    .linea-puntitos-horizontal {
+      display: flex;
+    }
+  
+    .linea-puntitos-vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clients2-contenedor {
+      background-color: transparent;
+      height: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-line {
+      width: 75%;
+      text-align: start;
+    }
+  
+    .clients2-line {
+      /*
+      display: flex;
+      justify-content: center;
+      */
+      img {
+        padding: 0 1em;
+      }
+    }
+  
+    .animate__fadeInRight {
+      animation: fadeInRight;
+      animation-duration: 1s;
+    }
+  
+    .animate__fadeInLeft {
+      animation: fadeInLeft;
+      animation-duration: 1s;
+    }
+  
+    .not__Hovered {
+      display: none;
+    }
+  
+    h1 {
+      color: #0A5AA3;
+      font-weight: bold;
+      font-size: 1.8rem;
+      font-size: 3rem;
+      margin-bottom: 1em;
+    }
+    
+    .first-line, .second-line {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .first-line {
+      margin-top: 3em;
+    }
+
+    .second-line {
+      margin-top: 2em;
+    }
+
+    .third-line {
+      margin-top: 2em;
+    }
+  }

@@ -1,0 +1,265 @@
+.why3 {
+    position: relative;
+    z-index: 900;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 82vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    ul {
+      list-style: none;
+    }
+    background-color: transparent;
+}
+/*
+.why3-image-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+  
+.why3-image-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fading 6s infinite;
+}
+
+.why3-image-slider .slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.why3-image-slider .slide:nth-child(2) {
+    animation-delay: 3s;
+}
+
+@keyframes fading {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
+
+.why3-contenedor-imagenes {
+    position: relative;
+    z-index: 900;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.why3-contenedor-imagenes::before, .why3-contenedor-imagenes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    background-size: 100%;
+    opacity: 0;
+}
+
+.why3-contenedor-imagenes::before {
+    background-image: url('../img/young-handsome-man-talking-walkie-talkie-radio-enjoying-canyon-view.jpg');
+    animation: fade1 12s infinite;
+}
+
+.why3-contenedor-imagenes::after {
+    background-image: url('../img/engineers-wearing-safe-uniform-with-radio-communic-2023-11-27-05-12-24-utc.jpg');
+    animation: fade2 12s infinite;
+}
+
+
+@keyframes fade1 {
+    0%, 10%, 90%, 100% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+    0%, 10%, 90%, 100% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+}
+*/
+
+
+
+  
+.why3 {
+    height: auto;
+  
+    .why3-contenedor {
+      background-color: transparent;
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+
+      .carousel3 {
+        width: 100%;
+        max-height: 100%;
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          background-color: transparent;
+          width: 100px;
+          height: 100px;
+        }
+  
+        .carousel-control-prev,
+        .carousel-control-next {
+          top: 75%;
+          transform: translateY(-50%);
+          width: 10%;
+          display: none;
+        }
+  
+        .carousel-item {
+          ul {
+            padding: 0;
+            margin: 0;
+          }
+        }
+  
+        .carousel-indicators li{
+          background-color: #000;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+  
+        .li-imagenes{
+          margin-top: 0.5em;
+          margin-bottom: 0.25em;
+        }
+  
+        .carousel-indicators {
+          margin-top: 0.75em;
+          top: 100%;
+        }
+      }
+    }
+}
+  
+.why3-contenedor .carousel3 {
+    margin: 0em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    background-color: #f1f1f1;
+  
+    h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #0A5AA3;
+        color: #0a4754;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: black;
+    }
+
+    .why3-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4em;
+        margin-bottom: 1em;
+        background: linear-gradient(to right, #12829b, #343434);
+
+        h1 {
+            font-size: 1.5em;
+            margin:  0;
+            color: white;
+        }
+    }
+
+    .why3-info {
+        margin: 2em 0;
+        padding: 0 1em;
+    }
+
+    .why3-textos-informacion {
+
+        .contenedor-boton-mas-informacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        .boton-mas-informacion {
+            width: 50%;
+            color:#fff;
+            margin-left: 1em;
+            padding: 1em;
+            background-color: #0A5AA3;
+            background: linear-gradient(to right,  #12829b, #343434);
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .boton-mas-informacion:hover {
+            background: linear-gradient(to left,  #12829b, #343434);
+            cursor: pointer;
+        }
+    }
+}
+
+.why3-footer {
+    width: 100%;
+    padding: 0.5em 1em;
+    background: linear-gradient(to left,  #12829b, #343434);
+    h3 {
+      color: white !important;
+      font-size: 1.2em;
+    }
+    p {
+      color: white !important;
+      font-size: 0.5rem;
+    }
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 120vw;
+}
+  
+
+.modal-footer-left3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.why3-header, .why3-info, .why3-footer, .why3-textos-informacion {
+    width: 100%;
+}
+
+.my-highest-zindex-modal {
+    z-index: 9999 !important;
+  }
+  
+.my-highest-zindex-backdrop {
+    z-index: 9998 !important;
+}

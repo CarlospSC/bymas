@@ -1,0 +1,98 @@
+.hero2 {
+    width: 100%;
+    height: 110vw;
+    /*background-image: url('../img/Guardia-radio-derecha-espacio.png');*/
+    background-image: url('../img/Guardia-radio-derecha-espacio.webp');
+    background-size: cover;
+    background-position: top right 13%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 1);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+        transition: background 0.5s ease;
+    }
+
+    &:hover::before {
+        background: transparent;
+    }
+
+    .hero2-content {
+        top: 67%;
+        left: 5%;
+        /*transform: translate(-25%, -25%);*/
+        color: white;
+        z-index: 1;
+
+        h1 {
+            font-size: 3.5rem;
+            font-size: 7.5vw;
+            margin-bottom: 14px;
+            width: 100%;
+            background: linear-gradient(10deg, #0082F5, #00CBF7, #a6e4f2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: white;
+            font-size: 1.15rem;
+            font-size: 3.75vw;
+            width: 100%;
+        }
+    }
+
+    .marcas-logos2 {
+        position: absolute;
+        top: 60vh;
+        top: 83%;
+        left: 1em;
+        width: 95%;
+        max-width: 95vw;
+        margin-top: 3em;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        border-radius: 10px;
+        transition: transform 1s ease;
+        /*
+        background-color: rgba(255, 255, 255, 0.932);
+        */
+        background: transparent;
+
+        img {
+            max-width: 100%; /* Las imágenes no pueden crecer más allá del tamaño del contenedor */
+            height: 100%;
+            width: 20%;
+            height: auto; /* Mantiene la proporción de las imágenes */
+        }
+
+        /*
+        .movistar-arena {
+            height: 57%;
+        }
+
+        .viña {
+            height: 80%;
+        }
+
+        .lollapalooza {
+            height: 80%;
+        }
+
+        .primavera-sound {
+            height: 70%;
+            margin-left: 0.5em;
+        }
+        */
+    }
+}

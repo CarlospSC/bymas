@@ -1,0 +1,139 @@
+
+.linea-puntos-ventas-grises {
+    position: absolute;
+    top: 170vh;
+    left: 80vh;
+        img {
+            margin-right: 1em;
+        }
+    transform: translateX(120%);
+    transition: transform 1s ease;
+}
+  
+.linea-puntos-ventas-grises.visible {
+    transform: translateX(0%);
+}
+
+.puntos-movimiento {
+    position: absolute;
+    top: 95vh;
+    transform: translateX(-125%);
+    transition: transform 1s ease;
+}
+
+.puntos-movimiento.visible {
+    transform: translateX(-25%);
+}
+
+
+
+
+
+.ventas {
+    z-index: 5;
+    height: 112vh;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    .ventas-contenedor {
+      background-color: transparent;
+      height: 80%;
+      width: 84%;
+      padding-left: 5em;
+      display: flex;
+  
+      .ventas-izquierda {
+        flex: 40%;
+  
+        .ventas-header {
+          display:flex;
+          align-items: center;
+          background: transparent;
+          padding: 0.5em;
+          padding-top: 18vw;
+          height: 17.5%;
+          h1 {
+            font-size: 4vw;
+            margin-left: 0.5em;
+            color: #0A5AA3;
+          }
+          .puntos {
+            display:flex;
+            justify-content: end;
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+
+      .ventas-derecha {
+        flex: 60%;
+        height: 100%;
+        display: flex;
+        padding: 3em;
+        margin-top: 7em;
+        padding-top: 1em;
+        justify-content: start;
+        align-items: center;
+
+        .imagen-ondas {
+          margin-right: 3em;
+          margin-top: 6em;
+        }
+
+        .ondas-movimiento {
+          animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+          animation-duration: 3s;
+        }
+      }
+    }
+  
+    .caja-ventas {
+      height: 82.5%;
+      display: flex;
+
+      .texto-ventas {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 4em;
+        .linea-circulo-p {
+          display: flex;
+        }
+
+        .circulo {
+          margin-top: 0.7vw;
+          margin-right: 1vw;
+          width: 1vw;
+          height: 1vw;
+          background-color: #0A5AA3;
+          border-radius: 50%;
+        }
+
+        .transparente {
+          background-color: transparent;
+        }
+
+        p {
+          color: rgb(100, 100, 100);
+          text-align: start;
+          font-size: 1.5vw;
+          font-weight: bold;
+        }
+
+        h3 {
+          font-size: 1.75vw;
+          color: white;
+          padding: 0.25em;
+          margin-top: 1em;
+          background-color: #0A5AA3;
+        }
+      }
+    }
+}

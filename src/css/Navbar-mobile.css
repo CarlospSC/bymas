@@ -1,0 +1,260 @@
+
+@media only screen and (max-width: 1090px) {
+    .nav {
+        background: linear-gradient(to right,#0A5AA3, #0082F5, #00CBF7, #95ecff);
+        justify-content:space-around;
+        padding: 0 1em;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-links {
+        justify-content: space-around;
+    }
+    .nav-motorola {
+        display: none;
+    }       
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        height: 4.25rem;
+        .nav-links {
+            span, .nav-sublink {
+                font-size: 13px;
+            }
+        }
+    }   
+}
+
+
+.nav .navmenu-links {
+    display: flex;
+}
+
+.nav .navmenu-links ul {
+    list-style: none;
+}
+
+.nav .navmenu-links ul li {
+    margin: 0 15px;
+}
+
+.nav .navmenu-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el icono del menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon box-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.nav .navmenu-links {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 674px) {
+    .nav {
+        justify-content: space-between;
+        padding-right: 1em;
+        height: 4rem;
+        flex-direction: row;
+        
+        .nav-links {
+            width: 60%;
+            span {
+                display: none;
+            }
+        }
+
+        .navmenu-links.menu-active {
+            display: flex;    
+        }
+    
+        .menu-active {
+            
+            flex-direction: column;
+            width: 100%;
+            height: 2000px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            padding: 20px 0;
+            ul {
+                li {
+                    padding: 10px 0;
+                }
+                li a:hover {
+                    color: #0082F5;
+                }
+            }
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+
+        /*
+        .nav-motorola {
+            display: block;
+            img {
+                height: 4em;
+            }
+        }
+        */
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    .nav {
+        .nav-links {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .nav {
+        .nav-links {
+            width: 100%;
+        }
+    }
+}
+
+
+/* -- ESTILOS NUEVOS -- */
+/* General styles */
+.nav .navmenu-links {
+    display: flex;
+}
+
+.nav .navmenu-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .navmenu-links ul li {
+    margin: 0 15px;
+}
+
+.nav .navmenu-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el icono del menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon box-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.nav .navmenu-links {
+    display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1090px) {
+    .nav {
+        background: linear-gradient(to right, #0A5AA3, #0082F5, #00CBF7, #95ecff);
+        justify-content: space-around;
+        padding: 0 1em;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-links {
+        justify-content: space-around;
+    }
+    .nav-motorola {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        height: 4.25rem;
+    }
+
+    .nav-links span, .nav-links .nav-sublink {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 674px) {
+    .nav {
+        justify-content: space-between;
+        padding-right: 1em;
+        height: 4rem;
+        flex-direction: row;
+    }
+
+    .nav-links {
+        width: 60%;
+    }
+
+    .nav-links span {
+        display: none;
+    }
+
+    .navmenu-links.menu-active {
+        display: flex !important;
+        ul {
+            display: flex !important;
+            flex-direction: column;
+            width: 100%;
+            height: 2000px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            padding: 20px 0;
+        }
+        
+    }
+
+    .navmenu-links.menu-active ul li {
+        padding: 10px 0;
+    }
+
+    .navmenu-links.menu-active ul li a:hover {
+        color: #0082F5;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    .nav-links {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .nav-links {
+        width: 100%;
+    }
+}
